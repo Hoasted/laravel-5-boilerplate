@@ -5993,15 +5993,15 @@ button.close {
     display: none !important; } }
 
 /*!
- *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  Font Awesome 4.4.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 /* FONT PATH
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("../../fonts/fontawesome-webfont.eot?v=4.3.0");
-  src: url("../../fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"), url("../../fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"), url("../../fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"), url("../../fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"), url("../../fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
+  src: url("../../fonts/fontawesome-webfont.eot?v=4.4.0");
+  src: url("../../fonts/fontawesome-webfont.eot?#iefix&v=4.4.0") format("embedded-opentype"), url("../../fonts/fontawesome-webfont.woff2?v=4.4.0") format("woff2"), url("../../fonts/fontawesome-webfont.woff?v=4.4.0") format("woff"), url("../../fonts/fontawesome-webfont.ttf?v=4.4.0") format("truetype"), url("../../fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -6011,9 +6011,7 @@ button.close {
   font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-transform: translate(0, 0);
-  transform: translate(0, 0); }
+  -moz-osx-font-smoothing: grayscale; }
 
 /* makes the font 33% larger relative to the icon container */
 .fa-lg {
@@ -6058,6 +6056,19 @@ button.close {
   border: solid 0.08em #eee;
   border-radius: .1em; }
 
+.fa-pull-left {
+  float: left; }
+
+.fa-pull-right {
+  float: right; }
+
+.fa.fa-pull-left {
+  margin-right: .3em; }
+
+.fa.fa-pull-right {
+  margin-left: .3em; }
+
+/* Deprecated as of 4.4.0 */
 .pull-right {
   float: right; }
 
@@ -6612,6 +6623,7 @@ button.close {
 .fa-credit-card:before {
   content: ""; }
 
+.fa-feed:before,
 .fa-rss:before {
   content: ""; }
 
@@ -7493,6 +7505,8 @@ button.close {
 .fa-git:before {
   content: ""; }
 
+.fa-y-combinator-square:before,
+.fa-yc-square:before,
 .fa-hacker-news:before {
   content: ""; }
 
@@ -7517,7 +7531,6 @@ button.close {
 .fa-history:before {
   content: ""; }
 
-.fa-genderless:before,
 .fa-circle-thin:before {
   content: ""; }
 
@@ -7722,6 +7735,7 @@ button.close {
 .fa-mercury:before {
   content: ""; }
 
+.fa-intersex:before,
 .fa-transgender:before {
   content: ""; }
 
@@ -7748,6 +7762,9 @@ button.close {
 
 .fa-neuter:before {
   content: ""; }
+
+.fa-genderless:before {
+  content: ""; }
 
 .fa-facebook-official:before {
   content: ""; }
@@ -7782,5 +7799,454 @@ button.close {
 
 .fa-medium:before {
   content: ""; }
+
+.fa-yc:before,
+.fa-y-combinator:before {
+  content: ""; }
+
+.fa-optin-monster:before {
+  content: ""; }
+
+.fa-opencart:before {
+  content: ""; }
+
+.fa-expeditedssl:before {
+  content: ""; }
+
+.fa-battery-4:before,
+.fa-battery-full:before {
+  content: ""; }
+
+.fa-battery-3:before,
+.fa-battery-three-quarters:before {
+  content: ""; }
+
+.fa-battery-2:before,
+.fa-battery-half:before {
+  content: ""; }
+
+.fa-battery-1:before,
+.fa-battery-quarter:before {
+  content: ""; }
+
+.fa-battery-0:before,
+.fa-battery-empty:before {
+  content: ""; }
+
+.fa-mouse-pointer:before {
+  content: ""; }
+
+.fa-i-cursor:before {
+  content: ""; }
+
+.fa-object-group:before {
+  content: ""; }
+
+.fa-object-ungroup:before {
+  content: ""; }
+
+.fa-sticky-note:before {
+  content: ""; }
+
+.fa-sticky-note-o:before {
+  content: ""; }
+
+.fa-cc-jcb:before {
+  content: ""; }
+
+.fa-cc-diners-club:before {
+  content: ""; }
+
+.fa-clone:before {
+  content: ""; }
+
+.fa-balance-scale:before {
+  content: ""; }
+
+.fa-hourglass-o:before {
+  content: ""; }
+
+.fa-hourglass-1:before,
+.fa-hourglass-start:before {
+  content: ""; }
+
+.fa-hourglass-2:before,
+.fa-hourglass-half:before {
+  content: ""; }
+
+.fa-hourglass-3:before,
+.fa-hourglass-end:before {
+  content: ""; }
+
+.fa-hourglass:before {
+  content: ""; }
+
+.fa-hand-grab-o:before,
+.fa-hand-rock-o:before {
+  content: ""; }
+
+.fa-hand-stop-o:before,
+.fa-hand-paper-o:before {
+  content: ""; }
+
+.fa-hand-scissors-o:before {
+  content: ""; }
+
+.fa-hand-lizard-o:before {
+  content: ""; }
+
+.fa-hand-spock-o:before {
+  content: ""; }
+
+.fa-hand-pointer-o:before {
+  content: ""; }
+
+.fa-hand-peace-o:before {
+  content: ""; }
+
+.fa-trademark:before {
+  content: ""; }
+
+.fa-registered:before {
+  content: ""; }
+
+.fa-creative-commons:before {
+  content: ""; }
+
+.fa-gg:before {
+  content: ""; }
+
+.fa-gg-circle:before {
+  content: ""; }
+
+.fa-tripadvisor:before {
+  content: ""; }
+
+.fa-odnoklassniki:before {
+  content: ""; }
+
+.fa-odnoklassniki-square:before {
+  content: ""; }
+
+.fa-get-pocket:before {
+  content: ""; }
+
+.fa-wikipedia-w:before {
+  content: ""; }
+
+.fa-safari:before {
+  content: ""; }
+
+.fa-chrome:before {
+  content: ""; }
+
+.fa-firefox:before {
+  content: ""; }
+
+.fa-opera:before {
+  content: ""; }
+
+.fa-internet-explorer:before {
+  content: ""; }
+
+.fa-tv:before,
+.fa-television:before {
+  content: ""; }
+
+.fa-contao:before {
+  content: ""; }
+
+.fa-500px:before {
+  content: ""; }
+
+.fa-amazon:before {
+  content: ""; }
+
+.fa-calendar-plus-o:before {
+  content: ""; }
+
+.fa-calendar-minus-o:before {
+  content: ""; }
+
+.fa-calendar-times-o:before {
+  content: ""; }
+
+.fa-calendar-check-o:before {
+  content: ""; }
+
+.fa-industry:before {
+  content: ""; }
+
+.fa-map-pin:before {
+  content: ""; }
+
+.fa-map-signs:before {
+  content: ""; }
+
+.fa-map-o:before {
+  content: ""; }
+
+.fa-map:before {
+  content: ""; }
+
+.fa-commenting:before {
+  content: ""; }
+
+.fa-commenting-o:before {
+  content: ""; }
+
+.fa-houzz:before {
+  content: ""; }
+
+.fa-vimeo:before {
+  content: ""; }
+
+.fa-black-tie:before {
+  content: ""; }
+
+.fa-fonticons:before {
+  content: ""; }
+
+div.st.nav {
+  width: 100%;
+  position: relative;
+  padding: 10px 0;
+  margin: 0 0 15px 0; }
+
+img.st-logo {
+  max-height: 30px; }
+
+div.st.content {
+  margin: 0; }
+
+div.st.content .header {
+  text-align: center; }
+
+div.st.content .header h3 {
+  padding: 0;
+  margin: 15px 0 15px 0; }
+
+div.st.content .header h4 {
+  margin: 20px 0 0 0;
+  padding: 0; }
+
+div.st.subfooter {
+  margin: 10px 0;
+  padding: 20px 0;
+  border-top: 1px solid #EAEBE5;
+  border-bottom: 1px solid #EAEBE5; }
+
+div.st.footer {
+  width: 100%;
+  position: relative;
+  padding: 25px 0; }
+
+div.st.footer ul.menu {
+  margin: 0;
+  padding: 0;
+  display: inline-block; }
+
+div.st.footer ul.menu > li {
+  list-style: none;
+  display: inline-block; }
+
+div.st.progress-tiers {
+  margin: 20px 10px 0 10px; }
+
+div.st.progress-tiers .progress {
+  height: 10px; }
+
+div.st.progress-tiers .tiers-3 .tier-1 {
+  left: 25%; }
+
+div.st.progress-tiers .tiers-3 .tier-2 {
+  left: 50%; }
+
+div.st.progress-tiers .tiers-3 .tier-3 {
+  left: 75%; }
+
+div.st.progress-tiers .tiers-4 .tier-1 {
+  left: 12.5%; }
+
+div.st.progress-tiers .tiers-4 .tier-2 {
+  left: 37.5%; }
+
+div.st.progress-tiers .tiers-4 .tier-3 {
+  left: 62.5%; }
+
+div.st.progress-tiers .tiers-4 .tier-4 {
+  left: 87.5%; }
+
+div.st.progress-tiers div[class*="tiers-"] div[class*="tier-"] {
+  position: absolute;
+  margin: -15px 0 0 -20px;
+  z-index: 1;
+  height: 40px;
+  width: 40px;
+  border-radius: 25px; }
+
+div.st.rewards img {
+  padding: 10%; }
+
+div.st.progress-tiers .active-color span, div.st.progress-tiers .no-color span {
+  font-size: 18px;
+  text-align: center;
+  display: block;
+  position: relative;
+  width: inherit;
+  height: inherit;
+  line-height: 46px;
+  text-align: center; }
+
+div.st.progress-tiers .no-color {
+  background-color: inherit; }
+
+div.share-buttons a {
+  color: #FFF;
+  font-size: 20px;
+  width: 15%;
+  padding: 5px 0; }
+
+div.share-buttons a.share-fb {
+  background-color: #3b5998; }
+
+div.share-buttons a.share-twitter {
+  background-color: #55acee; }
+
+div.share-buttons a.share-wa {
+  background-color: #4dc247; }
+
+div.share-buttons a.share-email {
+  background-color: #FC6D4C; }
+
+p.share-manual {
+  padding: 0;
+  margin: 15px; }
+
+div.st.share {
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+body.st {
+  font-family: "SofiaProRegular",Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.42857;
+  color: #0d3455;
+  background-color: #f3f4ee; }
+
+div.st.nav {
+  background-color: #F3F4EE;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.125); }
+
+div.st.content {
+  background-color: #fff;
+  margin: 0;
+  padding: 25px 0; }
+
+div.st.content .header h4 {
+  font-family: 'SofiaProBold',Arial,sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 1px;
+  font-size: 16px;
+  color: #b1b0ab; }
+
+div.st.content .header h3 {
+  font-family: 'SofiaProExtraLight',Arial,sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 1px;
+  font-size: 24px;
+  color: #0d3455; }
+
+div.st.content hr {
+  margin: 8px 10%;
+  color: #efefee; }
+
+div.st.signup {
+  background-color: #f17052;
+  margin: 0;
+  padding: 25px 0; }
+
+div.st.signup h3 {
+  font-family: "SofiaProRegular", Arial, sans-serif;
+  text-transform: uppercase; }
+
+div.st.signup p.divider {
+  padding: 0;
+  margin: 8px 0; }
+
+div.st.signup .form-control {
+  font-family: "SofiaProRegular",Arial,sans-serif;
+  color: #0d3455;
+  border: 1px solid #d9dad4;
+  border-radius: 2px; }
+
+div.st.signup input {
+  height: 40px; }
+
+a.st.btn-facebook {
+  font-size: 14px;
+  border-radius: 2px;
+  color: #fff;
+  background-color: #0d3455;
+  border-color: #0d3455; }
+
+input.st.btn.btn-email {
+  background-color: #0d3455;
+  border-color: #0d3455;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  color: #fff; }
+
+a.st.btn-facebook:hover {
+  background-color: #081e32; }
+
+div.st.subfooter {
+  color: #9f9f9b; }
+
+div.st.footer {
+  background-color: #0d3455;
+  color: #fff; }
+
+div.st.footer ul.menu > li {
+  margin: 0 8px; }
+
+div.st.footer ul.menu > li a {
+  color: #fff; }
+
+div.st.footer ul.menu > li a:hover {
+  color: #f27052;
+  text-decoration: none; }
+
+div.st.progress-tiers {
+  font-family: 'SofiaProExtraLight',Arial,sans-serif; }
+
+div.st.progress-tiers .active-color {
+  color: #fff; }
+
+div.st.progress-tiers .no-color {
+  color: #0d3455; }
+
+div.st.progress-tiers .progress-bar-color {
+  background-color: #0d3455; }
+
+@font-face {
+  font-family: 'SofiaProBold';
+  src: url("/fonts/SofiaProBold.eot?#iefix") format("embedded-opentype"), url("/fonts/SofiaProBold.otf") format("opentype"), url("/fonts/SofiaProBold.woff") format("woff"), url("/fonts/SofiaProBold.ttf") format("truetype"), url("/fonts/SofiaProBold.svg#SofiaProBold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'SofiaProExtraLight';
+  src: url("/fonts/SofiaProExtraLight.eot?#iefix") format("embedded-opentype"), url("/fonts/SofiaProExtraLight.otf") format("opentype"), url("/fonts/SofiaProExtraLight.woff") format("woff"), url("/fonts/SofiaProExtraLight.ttf") format("truetype"), url("/fonts/SofiaProExtraLight.svg#SofiaProExtraLight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'SofiaProRegular';
+  src: url("/fonts/SofiaProRegular.eot?#iefix") format("embedded-opentype"), url("/fonts/SofiaProRegular.otf") format("opentype"), url("/fonts/SofiaProRegular.woff") format("woff"), url("/fonts/SofiaProRegular.ttf") format("truetype"), url("/fonts/SofiaProRegular.svg#SofiaProRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 
 /*# sourceMappingURL=main.css.map */

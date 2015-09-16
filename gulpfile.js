@@ -6,6 +6,12 @@ elixir(function(mix) {
         .copy('vendor/fortawesome/font-awesome/fonts', 'public/fonts')
         .copy('vendor/twbs/bootstrap-sass/assets/fonts/bootstrap', 'public/fonts')
         .copy('vendor/twbs/bootstrap/dist/js/bootstrap.min.js', 'public/js/vendor')
+        .copy('vendor/zeroclipboard/zeroclipboard/dist/ZeroClipboard.min.js', 'public/js/vendor')
+        .copy('vendor/zeroclipboard/zeroclipboard/dist/ZeroClipboard.Core.min.js', 'public/js/vendor')
+        .copy('vendor/zeroclipboard/zeroclipboard/dist/ZeroClipboard.swf', 'public/js/vendor')
+        .copy('bower_components/sweetalert2/dist/sweetalert2.min.js', 'public/js/vendor')
+        .copy('bower_components/sweetalert2/dist/sweetalert2.css', 'public/css/vendor')
+        .copy('bower_components/kkcountdown/kkcountdown/js/build/kkcountdown.js', 'public/js/vendor')
 
         .sass([ // Process front-end stylesheets
                 'frontend/main.scss'

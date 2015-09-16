@@ -149,6 +149,7 @@ return [
 		/*
 		 * Application Service Providers...
 		 */
+		'Barryvdh\Debugbar\ServiceProvider',
 		'App\Providers\AccessServiceProvider',
 		'App\Providers\AppServiceProvider',
 		'App\Providers\BillingServiceProvider',
@@ -159,7 +160,12 @@ return [
 		'App\Providers\MacroServiceProvider',
 		'Laravel\Socialite\SocialiteServiceProvider',
 		'HieuLe\Active\ActiveServiceProvider',
-		'Laracasts\Utilities\JavaScript\JavascriptServiceProvider'
+		'Laracasts\Utilities\JavaScript\JavascriptServiceProvider',
+
+		/*
+		 * Custom Service Providers...
+		 */
+		'App\Providers\EmarsysServiceProvider',
 	],
 
 	/*

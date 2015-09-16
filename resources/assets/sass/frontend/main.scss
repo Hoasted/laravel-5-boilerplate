@@ -6,3 +6,379 @@
 @import '../../../../vendor/fortawesome/font-awesome/scss/font-awesome';
 
 // Front-end SCSS goes here.
+div.st.nav
+{
+  width: 100%;
+  position: relative;
+  padding: 10px 0;
+  margin: 0 0 15px 0;
+
+}
+
+img.st-logo
+{
+  max-height: 30px;
+}
+
+div.st.content{
+  margin: 0;
+}
+
+div.st.content .header
+{
+  text-align: center;
+}
+
+div.st.content .header h3
+{
+  padding: 0;
+  margin: 15px 0 15px 0;
+}
+
+div.st.content .header h4
+{
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+
+div.st.subfooter
+{
+  margin: 10px 0;
+  padding: 20px 0;
+  border-top: 1px solid #EAEBE5;
+  border-bottom: 1px solid #EAEBE5;
+}
+
+div.st.footer
+{
+  width: 100%;
+  position: relative;
+  padding: 25px 0;
+}
+
+div.st.footer ul.menu
+{
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+div.st.footer ul.menu > li
+{
+  list-style: none;
+  display: inline-block;
+}
+
+div.st.progress-tiers
+{
+  margin: 20px 10px 0 10px;
+
+}
+
+div.st.progress-tiers .progress
+{
+  height: 10px;
+}
+
+div.st.progress-tiers .tiers-3 .tier-1
+{
+  left:25%;
+}
+
+div.st.progress-tiers .tiers-3 .tier-2
+{
+  left:50%;
+}
+
+div.st.progress-tiers .tiers-3 .tier-3
+{
+  left:75%;
+}
+
+div.st.progress-tiers .tiers-4 .tier-1
+{
+  left:12.5%;
+}
+
+div.st.progress-tiers .tiers-4 .tier-2
+{
+  left:37.5%;
+}
+
+div.st.progress-tiers .tiers-4 .tier-3
+{
+  left:62.5%;
+}
+
+div.st.progress-tiers .tiers-4 .tier-4
+{
+  left:87.5%;
+}
+
+
+div.st.progress-tiers div[class*="tiers-"] div[class*="tier-"]
+{
+  position:absolute;
+  margin:-15px 0 0 -20px;
+  z-index:1;
+  height:40px;
+  width:40px;
+  border-radius:25px;
+}
+
+div.st.rewards img
+{
+  padding: 10%;
+}
+
+div.st.progress-tiers .active-color
+{
+
+}
+
+div.st.progress-tiers .active-color span, div.st.progress-tiers .no-color span
+{
+  font-size: 18px;
+  text-align: center;
+  display: block;
+  position: relative;
+  width: inherit;
+  height: inherit;
+  line-height: 46px;
+  text-align: center;
+}
+
+div.st.progress-tiers .no-color
+{
+  background-color:inherit;
+}
+
+div.share-buttons a
+{
+  color: #FFF;
+  font-size: 20px;
+  width: 15%;
+  padding: 5px 0;
+}
+
+div.share-buttons a.share-fb
+{
+  background-color: #3b5998;
+}
+
+div.share-buttons a.share-twitter
+{
+  background-color: #55acee;
+}
+
+div.share-buttons a.share-wa
+{
+  background-color: #4dc247;
+}
+
+div.share-buttons a.share-email
+{
+  background-color: #FC6D4C;
+}
+
+p.share-manual
+{
+  padding: 0;
+  margin: 15px;
+}
+
+div.st.share
+{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+
+//TREATWELL SPECIFIC
+body.st
+{
+  font-family: "SofiaProRegular",Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.42857;
+  color: #0d3455;
+  background-color: #f3f4ee;
+}
+
+div.st.nav
+{
+  background-color: #F3F4EE;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.125);
+}
+
+div.st.content
+{
+  background-color: #fff;
+  margin: 0;
+  padding: 25px 0;
+}
+
+div.st.content .header h4
+{
+  font-family: 'SofiaProBold',Arial,sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 1px;
+  font-size: 16px;
+  color: #b1b0ab;
+}
+
+div.st.content .header h3
+{
+  font-family: 'SofiaProExtraLight',Arial,sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 1px;
+  font-size: 24px;
+  color: #0d3455;
+}
+
+div.st.content hr{
+  margin: 8px 10%;
+  color: #efefee;
+}
+
+div.st.signup
+{
+  background-color: #f17052;
+  margin: 0;
+  padding: 25px 0;
+}
+
+div.st.signup h3
+{
+  font-family: "SofiaProRegular", Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+div.st.signup p.divider
+{
+  padding: 0;
+  margin: 8px 0;
+}
+
+div.st.signup .form-control
+{
+  font-family: "SofiaProRegular",Arial,sans-serif;
+  color: #0d3455;
+  border: 1px solid #d9dad4;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+div.st.signup input
+{
+  height: 40px;
+}
+
+a.st.btn-facebook
+{
+  font-size: 14px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  color: #fff;
+  background-color: #0d3455;
+  border-color: #0d3455;
+}
+
+input.st.btn.btn-email
+{
+  background-color: #0d3455;
+  border-color: #0d3455;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  color: #fff;
+}
+
+
+a.st.btn-facebook:hover
+{
+  background-color: #081e32;
+}
+
+div.st.subfooter
+{
+  color: #9f9f9b;
+}
+
+div.st.footer
+{
+  background-color: #0d3455;
+  color:#fff;
+}
+
+div.st.footer ul.menu
+{
+  //
+}
+
+div.st.footer ul.menu > li
+{
+  margin:0 8px;
+}
+
+div.st.footer ul.menu > li a
+{
+  color: #fff;
+}
+
+div.st.footer ul.menu > li a:hover
+{
+  color: #f27052;
+  text-decoration: none;
+}
+
+div.st.progress-tiers
+{
+  font-family: 'SofiaProExtraLight',Arial,sans-serif;
+}
+
+div.st.progress-tiers .active-color
+{
+  color:#fff;
+}
+
+div.st.progress-tiers .no-color
+{
+  color:#0d3455;
+}
+
+div.st.progress-tiers .progress-bar-color
+{
+  background-color:#0d3455;
+}
+
+//FONTS
+@font-face
+{
+  font-family: 'SofiaProBold';
+  src: url('/fonts/SofiaProBold.eot?#iefix') format('embedded-opentype'),  url('/fonts/SofiaProBold.otf')  format('opentype'),
+  url('/fonts/SofiaProBold.woff') format('woff'), url('/fonts/SofiaProBold.ttf')  format('truetype'), url('/fonts/SofiaProBold.svg#SofiaProBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face
+{
+  font-family: 'SofiaProExtraLight';
+  src: url('/fonts/SofiaProExtraLight.eot?#iefix') format('embedded-opentype'),  url('/fonts/SofiaProExtraLight.otf')  format('opentype'),
+  url('/fonts/SofiaProExtraLight.woff') format('woff'), url('/fonts/SofiaProExtraLight.ttf')  format('truetype'), url('/fonts/SofiaProExtraLight.svg#SofiaProExtraLight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face
+{
+  font-family: 'SofiaProRegular';
+  src: url('/fonts/SofiaProRegular.eot?#iefix') format('embedded-opentype'),  url('/fonts/SofiaProRegular.otf')  format('opentype'),
+  url('/fonts/SofiaProRegular.woff') format('woff'), url('/fonts/SofiaProRegular.ttf')  format('truetype'), url('/fonts/SofiaProRegular.svg#SofiaProRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -20,6 +20,12 @@ class EventServiceProvider extends ServiceProvider {
 		'App\Events\Frontend\Auth\UserLoggedOut' => [
 			'App\Listeners\Frontend\Auth\UserLoggedOutHandler',
 		],
+		'App\Events\Frontend\StackMemberSignedUp' => [
+			'App\Listeners\Frontend\StackMemberReachedTierHandler',
+		],
+		'App\Events\Frontend\StackActionProcessing' => [
+			'App\Listeners\Frontend\StackActionProcessingHandler',
+		],
 	];
 
 	/**
