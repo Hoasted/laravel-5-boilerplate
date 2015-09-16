@@ -24,8 +24,8 @@
             <div class="col-sm-10 col-sm-offset-1">
                 <div class="pull-right">
                     <ul class="menu">
-                        <li><a onclick="ga('send', 'event', 'button', 'click', 'privacy');" href="#">{{ trans('messages.privacy') }}</a></li>
-                        <li><a onclick="ga('send', 'event', 'button', 'click', 'terms');" href="#">{{ trans('messages.terms') }}</a></li>
+                        <li><a target="_blank" onclick="ga('send', 'event', 'button', 'click', 'privacy');" href="https://www.treatwell.nl/privacy-policy">{{ trans('messages.privacy') }}</a></li>
+                        <li><a target="_blank" onclick="ga('send', 'event', 'button', 'click', 'terms');" href="https://www.treatwell.nl/info/actie-voorwaarden/">{{ trans('messages.terms') }}</a></li>
                         <li>&copy; Treatwell</li>
                     </ul>
                 </div>

@@ -8,7 +8,7 @@
     <div class="row">
 
         <div class="col-sm-10 col-sm-offset-1">
-            <img class="st img-responsive" src="https://images.treatwell.com/jdP_ikhIOLvPpPWR65xtGYAa2qs=/810x543/00d81edcd49641e08696a3490e2d5477/Detailpage_GiftCardimage_509_1.jpg">
+            <img class="st img-responsive" src="/img/treatwell-header.jpg">
             <div class="st content">
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">

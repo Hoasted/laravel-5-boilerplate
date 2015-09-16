@@ -22,6 +22,7 @@ class EventServiceProvider extends ServiceProvider {
 		],
 		'App\Events\Frontend\StackMemberSignedUp' => [
 			'App\Listeners\Frontend\StackMemberReachedTierHandler',
+			'App\Listeners\Frontend\StackMemberSignedUpHandler',
 		],
 		'App\Events\Frontend\StackActionProcessing' => [
 			'App\Listeners\Frontend\StackActionProcessingHandler',

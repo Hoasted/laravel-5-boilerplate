@@ -19,6 +19,7 @@ class StackController extends Controller
 {
     public function show(Request $request, $slug, $referral_token = null)
     {
+        \App::setLocale('nl');
         $data = [];
         $stack = Stack::where('slug' , '=', $slug)->firstOrFail();
         $referral_user = $stack->members()->where('referral_token', $referral_token)->first();
@@ -47,6 +48,7 @@ class StackController extends Controller
 
     public function member(Request $request, $slug, $referral_token)
     {
+        \App::setLocale('nl');
         $data = [];
         $stack = Stack::where('slug' , '=', $slug)->firstOrFail();
         $stackMember = $stack->members()->where('referral_token', $referral_token)->first();

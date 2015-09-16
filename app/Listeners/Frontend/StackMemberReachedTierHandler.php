@@ -54,23 +54,23 @@ class StackMemberReachedTierHandler
                 }
             }
 
-            $actions = $stack->actions()->where('tier_id', '=', null)->where('is_enabled','=',true)->get();
-            if(count($actions) > 0)
-            {
-                foreach($actions as $action)
-                {
-                    $stackActionLog = StackActionLog::where('action_id', '=', $action->id)->where('member_id', '=', $stackMemberReferrer->id)->first();
-                    if(!$stackActionLog)
-                    {
-                        $stackActionLog = new StackActionLog();
-                        $stackActionLog->action_id = $action->id;
-                        $stackActionLog->member_id = $stackMemberReferrer->id;
-                        $stackActionLog->has_run = false;
-                        $stackActionLog->save();
-                    }
-                    Event::fire(new StackActionProcessing($stackActionLog, 'realtime'));
-                }
-            }
+            // $actions = $stack->actions()->where('tier_id', '=', null)->where('is_enabled','=',true)->get();
+            // if(count($actions) > 0)
+            // {
+            //     foreach($actions as $action)
+            //     {
+            //         $stackActionLog = StackActionLog::where('action_id', '=', $action->id)->where('member_id', '=', $stackMemberReferrer->id)->first();
+            //         if(!$stackActionLog)
+            //         {
+            //             $stackActionLog = new StackActionLog();
+            //             $stackActionLog->action_id = $action->id;
+            //             $stackActionLog->member_id = $stackMemberReferrer->id;
+            //             $stackActionLog->has_run = false;
+            //             $stackActionLog->save();
+            //         }
+            //         Event::fire(new StackActionProcessing($stackActionLog, 'realtime'));
+            //     }
+            // }
         }
     }
 }

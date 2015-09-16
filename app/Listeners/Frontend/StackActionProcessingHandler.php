@@ -61,9 +61,13 @@ class StackActionProcessingHandler
     {
         if($stackIntegration->config['username'] && $stackIntegration->config['password'])
         {
+            $stackMember = $stackActionLog->member()->first();
             $emarsys = new \App\Services\Emarsys($stackIntegration->config['username'], $stackIntegration->config['password']);
-            //$result = $emarsys->send('GET', 'contact/3=tom%40hoasted.com');
-            //dd($result);
+            $emarsysUser = $emarsys->send('GET', 'contact/3=' . $stackMember->email);
+            if($emarsysUser->data->id)
+            {
+                //TRIGGER MAIL
+            }
         } else {
             return false;
         }

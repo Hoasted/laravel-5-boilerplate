@@ -5,9 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <meta name="_token" content="{{ csrf_token() }}" />
-    <title>@yield('title', app_name())</title>
-    <meta name="description" content="@yield('meta_description', 'Default Description')">
-    <meta name="author" content="@yield('author', 'Anthony Rappa')">
+    <title>Tientje van Treatwell! Wil jij ook € 10 korting bij een beauty-, massage-, of kapsalon? Als jij je aanmeldt dan spaar ik voor nóg meer korting.</title>
+    <meta name="description" content="Jij gunt je vrienden toch wel een ontspannen massage nieuwe coupe of verzorgde nagels? Deel nu super makkelijk deze actie en ontvang nog meer Treatwell korting. Als je vrienden meedoen aan deze actie, ontvangen zij ook een Tientje van Treatwell in hun mail. Hoe meer vrienden zich via jou aanmelden, hoe meer korting jij krijgt. Win-win dus!">
+    <meta name="author" content="Treatwell">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@treatwellnl">
+    <meta name="twitter:title" content="Tientje van Treatwell! Wil jij ook € 10 korting bij een beauty-, massage-, of kapsalon? Als jij je aanmeldt dan spaar ik voor nóg meer korting.">
+    <meta name="twitter:description" content="Jij gunt je vrienden toch wel een ontspannen massage nieuwe coupe of verzorgde nagels? Deel nu super makkelijk deze actie en ontvang nog meer Treatwell korting. Als je vrienden meedoen aan deze actie, ontvangen zij ook een Tientje van Treatwell in hun mail. Hoe meer vrienden zich via jou aanmelden, hoe meer korting jij krijgt. Win-win dus!">
+    <meta name="twitter:creator" content="@treatwellnl">
+    <meta name="twitter:image" content="/img/treatwell-header.jpg">
+
+    <meta property="og:title" content="Tientje van Treatwell! Wil jij ook € 10 korting bij een beauty-, massage-, of kapsalon? Als jij je aanmeldt dan spaar ik voor nóg meer korting." />
+    <meta property="og:url" content="https://www.tientjevantreatwell.nl/" />
+    <meta property="og:image" content="/img/treatwell-header.jpg" />
+    <meta property="og:description" content="Jij gunt je vrienden toch wel een ontspannen massage nieuwe coupe of verzorgde nagels? Deel nu super makkelijk deze actie en ontvang nog meer Treatwell korting. Als je vrienden meedoen aan deze actie, ontvangen zij ook een Tientje van Treatwell in hun mail. Hoe meer vrienden zich via jou aanmelden, hoe meer korting jij krijgt. Win-win dus!" /> 
+    <meta property="og:site_name" content="Tientje van Treatwell" />
+
     @yield('meta')
 
     @yield('before-styles-end')

@@ -8030,6 +8030,9 @@ div.st.content .header h4 {
   margin: 20px 0 0 0;
   padding: 0; }
 
+div.st.content .header p {
+  padding: 5px; }
+
 div.st.subfooter {
   margin: 10px 0;
   padding: 20px 0;
@@ -8248,5 +8251,8 @@ div.st.progress-tiers .progress-bar-color {
   src: url("/fonts/SofiaProRegular.eot?#iefix") format("embedded-opentype"), url("/fonts/SofiaProRegular.otf") format("opentype"), url("/fonts/SofiaProRegular.woff") format("woff"), url("/fonts/SofiaProRegular.ttf") format("truetype"), url("/fonts/SofiaProRegular.svg#SofiaProRegular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
+.kkcountdown-box span {
+  margin: 0 1px; }
 
 /*# sourceMappingURL=main.css.map */

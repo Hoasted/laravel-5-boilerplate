@@ -8,7 +8,7 @@
     <div class="row">
 
         <div class="col-sm-10 col-sm-offset-1">
-            <img class="st img-responsive" src="https://images.treatwell.com/jdP_ikhIOLvPpPWR65xtGYAa2qs=/810x543/00d81edcd49641e08696a3490e2d5477/Detailpage_GiftCardimage_509_1.jpg">
+            <img class="st img-responsive" src="/img/treatwell-header.jpg">
             <div class="st content member">
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
@@ -16,9 +16,8 @@
                             <h4>{{ $content['subtitle'] }}</h4>
                             <hr>
                             <h3>{{ $content['title'] }}</h3>
-
-                            <p><span class="kkcountdown" data-time="1441974469"></span></p>
-                            <p>{{ $content['body'] }}</p>
+                            <p>{{ $content['body'] }} </p>
+                            <p>Je hebt nu {{ $member->referred->count() }} vrienden aangebracht, spaar nu snel voor meer!</p>
                         </div>
                     </div>
                 </div>
@@ -27,14 +26,13 @@
                         <div class="row text-center">
                             <div class="st rewards col-xs-12">
                                 @foreach($stack->tiers()->get() as $index => $tier)
-                                    <div style="float:left; display: inline-block; width: {{ (100 / $stack->tiers()->count()) - 0.01 }}%;">
+                                    <div class="col-xs-3">
                                         @if($tier->image)
                                             <img class="img-responsive img-circle" src="{{ $tier->image }}" />
                                         @endif
                                         <p>{{ $tier->description }}</p>
                                     </div>
                                 @endforeach
-
                             </div>
                         </div>
                     </div>
@@ -54,17 +52,18 @@
                 <div class="row st share">
                     <div class="col-xs-10 col-xs-offset-1">
                         <h3 class="text-center">{{ $content['sharetitle'] }}</h3>
+                        <p class="text-center">Wees er snel bij! Je vrienden moeten zich aangemeld hebben binnen: <br/><span class="kkcountdown" data-time="1443139200"></span></p>
                         <div class="share-buttons text-center">
                             <a class="share-fb btn">
                                 <i class="fa fa-facebook"></i>
                             </a>
-                            <a class="share-twitter btn" href="https://twitter.com/intent/tweet?text={{ urlencode($share['prefilled']) }}&url={{ urlencode($share['url']) }}">
+                            <a class="share-twitter btn" href="https://twitter.com/intent/tweet?text={{ urlencode('Wil jij ook € 10 korting bij een beauty-, massage-, of kapsalon? Als jij je aanmeldt dan spaar ik voor nóg meer korting.') }}&url={{ urlencode($share['url']) }}">
                                 <i class="fa fa-twitter"></i>
                             </a>
-                            <a class="share-wa btn visible-xs-inline-block" href="whatsapp://send?text={{ $share['prefilled'] }}" data-action="share/whatsapp/share">
+                            <a class="share-wa btn visible-xs-inline-block" href="whatsapp://send?text={{ 'Hey! Ik heb net € 10 korting gekregen op een behandeling bij één van de ruim 1700 beauty-, massage- en kapsalons op Treatwell.nl. Als jij je nu aanmeldt krijg je ook een tientje korting! Bonus voor mij: als jij je dat doet via deze link dan spaar ik voor nóg meer korting :-). ' . $share['url'] }}" data-action="share/whatsapp/share">
                                 <i class="fa fa-whatsapp"></i>
                             </a>
-                            <a class="share-email btn" href="mailto:?bcc=share%40app.treatwell.nl&subject=Sparen%20voor%20een%20gratis%20behandeling&body=%20%20%20Hallo%20vriend%21%20%20%20%0D%0A%20%20%20%20%20%20%0D%0A%20%20%20Bij%20Treatwell%20kan%20ik%20sparen%20voor%20een%20gratis%20behandeling%21%20Wil%20jij%20dit%20ook%20of%20wil%20je%20me%20helpen%20sparen%3F%20%20%20%0D%0A%20%20%20%20%20%20%0D%0A%20%20%20Schrijf%20je%20dan%20hier%20in%3A%20http%3A%2F%2Ftest-app.social.dev%2Freferral%2FSCKCShBpho9pAxEE%20%20%20">
+                            <a class="share-email btn" href="mailto:?&subject=Krijg%20een%20tientje%20van%20Treatwell!&body=Spread%20the%20beauty!%20Ik%20heb%20net%20€%2010%20korting%20gekregen%20op%20een%20behandeling%20bij%20één%20van%20de%201700%20beauty-,%20massage-%20en%20kapsalons%20op%20Treatwell.nl.%20Claim%20nu%20ook%20jouw%20korting!%0D%0A%0D%0ABonus%20voor%20mij:%20als%20jij%20je%20aanmeldt%20via%20deze%20link%20dan%20spaar%20ik%20voor%20nóg%20meer%20korting.%0D%0A%0D%0A{{ urlencode($share['url']) }}">
                                 <i class="fa fa-envelope"></i>
                             </a>
                         </div>

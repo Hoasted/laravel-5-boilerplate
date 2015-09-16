@@ -1,7 +1,14 @@
 $(function(){
     $(document).ready(function()
     {
-        $(".kkcountdown").kkcountdown();
+        $(".kkcountdown").kkcountdown(
+            {
+                dayText: 'dag',
+                daysText: 'dagen',
+                hoursText: 'uur',
+
+            }
+        );
     });
 
     $('.st.fb-login').on('click', function(e)
