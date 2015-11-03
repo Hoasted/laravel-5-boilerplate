@@ -47,7 +47,7 @@ $(function(){
                                    }
                                });
                                swal({
-                                   title: "What is your correct email?",
+                                   title: trans.correctemail,
                                    html: '<div id="fb-email-confirmation-group" class="form-group"><p id="fb-email-confirmation-error"></p><input class="confirm-input form-control" id="fb-email-confirmation" type="email" placeholder="Email" /></div>',
                                    confirmButtonText: trans.submit,
                                    closeOnConfirm: false,

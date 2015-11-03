@@ -8,15 +8,13 @@
     <div class="row">
 
         <div class="col-sm-10 col-sm-offset-1">
-            <img class="st img-responsive" src="/img/treatwell-header.jpg">
+            <img class="st img-responsive" src="/img/welcome-header-image-treatwell.jpg">
             <div class="st content">
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
                         <div class="st header">
-                            <h4>{{ $content['subtitle'] }}</h4>
-                            <hr>
                             <h3>{{ $content['title'] }}</h3>
-                            <p>{{ $content['body'] }}</p>
+                            <p>{!! $content['body'] !!}</p>
                         </div>
                     </div>
                 </div>

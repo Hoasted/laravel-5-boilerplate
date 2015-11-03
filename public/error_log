@@ -1,1 +1,3 @@
 [11-May-2015 14:21:21 UTC] PHP Fatal error:  Class 'App\Hash' not found in /home5/rappaso1/public_html/laravel-boilerplate/testing/app/User.php on line 61
+[23-Sep-2015 10:07:28 UTC] PHP Fatal error:  Class 'App\Listeners\Frontend\Carbon\Carbon' not found in /home/tientjev/public_html/app/Listeners/Frontend/StackActionProcessingHandler.php on line 75
+[30-Sep-2015 10:14:59 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Frontend\Exeption' not found in /home/tientjev/public_html/app/Http/Controllers/Frontend/StackController.php on line 113

@@ -1,26 +1,32 @@
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
+    <!--
+        Application built by Hoasted
+        Visit our website at hoasted.com
+    -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <meta name="_token" content="{{ csrf_token() }}" />
     <title>Tientje van Treatwell! Wil jij ook € 10 korting bij een beauty-, massage-, of kapsalon? Als jij je aanmeldt dan spaar ik voor nóg meer korting.</title>
-    <meta name="description" content="Jij gunt je vrienden toch wel een ontspannen massage nieuwe coupe of verzorgde nagels? Deel nu super makkelijk deze actie en ontvang nog meer Treatwell korting. Als je vrienden meedoen aan deze actie, ontvangen zij ook een Tientje van Treatwell in hun mail. Hoe meer vrienden zich via jou aanmelden, hoe meer korting jij krijgt. Win-win dus!">
+    <meta name="description" content="Ik heb net € 10 korting gekregen op een beauty &amp; wellness behandeling. Claim nu ook jouw korting!">
     <meta name="author" content="Treatwell">
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@treatwellnl">
-    <meta name="twitter:title" content="Tientje van Treatwell! Wil jij ook € 10 korting bij een beauty-, massage-, of kapsalon? Als jij je aanmeldt dan spaar ik voor nóg meer korting.">
-    <meta name="twitter:description" content="Jij gunt je vrienden toch wel een ontspannen massage nieuwe coupe of verzorgde nagels? Deel nu super makkelijk deze actie en ontvang nog meer Treatwell korting. Als je vrienden meedoen aan deze actie, ontvangen zij ook een Tientje van Treatwell in hun mail. Hoe meer vrienden zich via jou aanmelden, hoe meer korting jij krijgt. Win-win dus!">
+    <meta name="twitter:title" content="€ 10 korting ontvangen bij je favoriete salon? Treatwell trakteert!">
+    <meta name="twitter:description" content="Ik heb net € 10 korting gekregen op een beauty &amp; wellness behandeling. Claim nu ook jouw korting!">
     <meta name="twitter:creator" content="@treatwellnl">
-    <meta name="twitter:image" content="/img/treatwell-header.jpg">
+    <meta name="twitter:image" content="https://www.tientjevantreatwell.nl/img/fb-graph-header.jpg">
 
-    <meta property="og:title" content="Tientje van Treatwell! Wil jij ook € 10 korting bij een beauty-, massage-, of kapsalon? Als jij je aanmeldt dan spaar ik voor nóg meer korting." />
+    <meta property="og:title" content="€ 10 korting ontvangen bij je favoriete salon? Treatwell trakteert!" />
     <meta property="og:url" content="https://www.tientjevantreatwell.nl/" />
-    <meta property="og:image" content="/img/treatwell-header.jpg" />
-    <meta property="og:description" content="Jij gunt je vrienden toch wel een ontspannen massage nieuwe coupe of verzorgde nagels? Deel nu super makkelijk deze actie en ontvang nog meer Treatwell korting. Als je vrienden meedoen aan deze actie, ontvangen zij ook een Tientje van Treatwell in hun mail. Hoe meer vrienden zich via jou aanmelden, hoe meer korting jij krijgt. Win-win dus!" /> 
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://www.tientjevantreatwell.nl/img/fb-graph-header.jpg" />
+    <meta property="og:description" content="Ik heb net € 10 korting gekregen op een beauty &amp; wellness behandeling. Claim nu ook jouw korting!" /> 
     <meta property="og:site_name" content="Tientje van Treatwell" />
+    <meta property="fb:app_id" content="1614888285465888" />
 
     @yield('meta')
 
@@ -65,5 +71,9 @@
 @yield('after-scripts-end')
 
 @include('frontend.stack.includes.ga')
+<!--
+        Application built by Hoasted
+        Visit our website at hoasted.com
+-->
 </body>
 </html>

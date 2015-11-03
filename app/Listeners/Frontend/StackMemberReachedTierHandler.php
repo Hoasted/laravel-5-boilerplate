@@ -10,6 +10,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Log;
 use Event;
+use App\Providers\EmarsysServiceProvider;
 
 class StackMemberReachedTierHandler
 {
@@ -36,7 +37,19 @@ class StackMemberReachedTierHandler
         {
             $stack = $stackMemberReferrer->stack()->first();
             $stackTiers = $stack->tiers()->get();
-            $reachedStackTier = $stackTiers->where('signups_required', $stackMemberReferrer->referred()->count())->first();
+            $reachedStackTier = $stackTiers->whereLoose('signups_required', $stackMemberReferrer->referred()->count())->first();
+
+            $stackIntegration = $stack->integrations()->where('type', '=', 'emarsys')->first();
+            $emarsys = new \App\Services\Emarsys($stackIntegration->config['username'], $stackIntegration->config['password']);
+            $eUserData = array
+            (
+                '3' => $stackMemberReferrer->email,
+                '11232' => $stackMemberReferrer->referred()->count()
+            );
+            $eUserData = json_encode($eUserData);
+            $eUser = $emarsys->send('PUT', 'contact', $eUserData);
+
+
             if($reachedStackTier)
             {
                 $actions = $reachedStackTier->actions()->get();

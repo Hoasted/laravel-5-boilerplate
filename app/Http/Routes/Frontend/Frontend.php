@@ -7,18 +7,19 @@
 /**
  * Default Framework routes
  */
-Route::group(['domain' => config('stack.domain')], function()
-{
-	Route::get('/', ['as' => 'home', 'uses' => 'FrontendController@index']);
-	Route::get('macros', 'FrontendController@macros');
-});
+//Route::group(['domain' => config('stack.domain')], function()
+//{
+//	Route::get('/', ['as' => 'home', 'uses' => 'FrontendController@index']);
+//	Route::get('macros', 'FrontendController@macros');
+//});
 
 /**
  * Routes for Stack Apps
  */
-Route::group(['domain' => '{slug}.social.dev'], function($slug)
+Route::group(['domain' => '{slug}.tientjevantreatwell.nl'], function($slug)
 {
 	Route::get('/', 'StackController@show');
+	Route::post('/', 'StackController@show');
 	Route::get('member/{referral_token}', 'StackController@member')->where(['slug' => '[a-z-0-9-]+', 'referral_token' => '[a-zA-Z0-9]+']);
 
 	//App views
