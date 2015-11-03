@@ -32,7 +32,7 @@ class StackActionProcessingHandler
     public function handle(StackActionProcessing $event)
     {
         $stackActionLog = $event->stackActionLog;
-        if($stackActionLog->has_run === false)
+        if($stackActionLog->has_run == false)
         {
             $stackAction = $stackActionLog->action()->first();
             if( ($event->type === 'realtime' && $stackAction->type === 'realtime') || ($event->type === 'batch' && $stackAction->type === 'batch'))
@@ -63,11 +63,17 @@ class StackActionProcessingHandler
         {
             $stackMember = $stackActionLog->member()->first();
             $emarsys = new \App\Services\Emarsys($stackIntegration->config['username'], $stackIntegration->config['password']);
-            $emarsysUser = $emarsys->send('GET', 'contact/3=' . $stackMember->email);
-            if($emarsysUser->data->id)
-            {
-                //TRIGGER MAIL
-            }
+            $triggerCampaignData = array
+            (
+                'key_id' => "3",
+                "external_id" => $stackMember->email,
+                "data" => null
+            );
+            $triggerCampaignData = json_encode($triggerCampaignData);
+            $triggerCampaign = $emarsys->send('POST', 'event/788/trigger', $triggerCampaignData);
+            $stackActionLog->has_run = true;
+            $stackActionLog->ran_on = \Carbon\Carbon::now();
+            $stackActionLog->save();
         } else {
             return false;
         }
