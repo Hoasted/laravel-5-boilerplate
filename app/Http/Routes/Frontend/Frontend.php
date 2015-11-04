@@ -16,7 +16,7 @@
 /**
  * Routes for Stack Apps
  */
-Route::group(['domain' => '{slug}.tientjevantreatwell.nl'], function($slug)
+Route::group(['domain' => '{slug}.sint.tv'], function($slug)
 {
 	Route::get('/', 'StackController@show');
 	Route::post('/', 'StackController@show');

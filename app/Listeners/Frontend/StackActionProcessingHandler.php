@@ -47,6 +47,9 @@ class StackActionProcessingHandler
                             break;
                         case 'facebook':
                             $result = $this->handleFacebook($stackIntegration, $stackAction, $stackActionLog);
+                            break;
+                        case 'engine':
+                            $result = $this->handleFacebook($stackIntegration, $stackAction, $stackActionLog);
                     }
                 }
             }
@@ -87,6 +90,6 @@ class StackActionProcessingHandler
      */
     private function handleFacebook(StackIntegration $stackIntegration, StackAction $stackAction, StackActionLog $stackActionLog)
     {
-        dd($stackActionLog->member());
+        //dd($stackActionLog->member());
     }
 }

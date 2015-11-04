@@ -650,8 +650,8 @@ a:hover, a:active, a:focus {
 .open:not(.dropup) > .animated-dropdown-menu {
   -webkit-backface-visibility: visible !important;
   backface-visibility: visible !important;
-  -webkit-animation: flipInX 0.7s both;
-  animation: flipInX 0.7s both; }
+  -webkit-animation: flipInX .7s both;
+  animation: flipInX .7s both; }
 
 @keyframes flipInX {
   0% {
@@ -900,7 +900,7 @@ a:hover, a:active, a:focus {
   z-index: 5px; }
 
 .small-box .icon {
-  transition: all 0.3s linear;
+  transition: all .3s linear;
   position: absolute;
   top: -10px;
   right: 10px;
@@ -1905,8 +1905,8 @@ table.text-center, table.text-center td, table.text-center th {
   clear: both; }
 
 .direct-chat-messages, .direct-chat-contacts {
-  transition: -webkit-transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out; }
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out; }
 
 .direct-chat-text {
   border-radius: 5px;
@@ -2798,15 +2798,15 @@ table.text-center, table.text-center td, table.text-center th {
   line-height: 30px; }
 
 .fc-color-picker > li .fa {
-  transition: -webkit-transform linear 0.3s;
-  transition: transform linear 0.3s; }
+  transition: -webkit-transform linear .3s;
+  transition: transform linear .3s; }
 
 .fc-color-picker > li .fa:hover {
   -webkit-transform: rotate(30deg);
   transform: rotate(30deg); }
 
 #add-new-event {
-  transition: all linear 0.3s; }
+  transition: all linear .3s; }
 
 .external-event {
   padding: 5px 10px;

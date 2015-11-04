@@ -10,14 +10,31 @@ div.st.nav
 {
   width: 100%;
   position: relative;
-  padding: 10px 0;
-  margin: 0 0 15px 0;
+  padding: 20px 0;
 
+}
+
+div.st.nav .nav-title
+{
+  color: white;
+  padding: 20px 0;
+  margin: 0;
 }
 
 img.st-logo
 {
-  max-height: 30px;
+  max-height: 60px;
+}
+
+div.st.video
+{
+  position: relative;
+}
+
+div.st.video img
+{
+  position: absolute;
+  z-index: 999;
 }
 
 div.st.content{
@@ -33,6 +50,12 @@ div.st.content .header h3
 {
   padding: 0;
   margin: 15px 0 15px 0;
+}
+
+div.st.content.member
+{
+  background-color: #f6f6f6;
+  margin-bottom: 25px;
 }
 
 div.st.content .header h4
@@ -129,6 +152,7 @@ div.st.progress-tiers div[class*="tiers-"] div[class*="tier-"]
   height:40px;
   width:40px;
   border-radius:25px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 div.st.rewards img
@@ -136,14 +160,17 @@ div.st.rewards img
   padding: 10%;
 }
 
-div.st.progress-tiers .active-color
+div.progress
 {
-
+  background-color: white;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
 }
+
+
 
 div.st.progress-tiers .active-color span, div.st.progress-tiers .no-color span
 {
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
   display: block;
   position: relative;
@@ -151,6 +178,12 @@ div.st.progress-tiers .active-color span, div.st.progress-tiers .no-color span
   height: inherit;
   line-height: 46px;
   text-align: center;
+  color: #999999;
+}
+
+div.st.progress-tiers .active-color span
+{
+  color: white;
 }
 
 div.st.progress-tiers .no-color
@@ -202,17 +235,17 @@ div.st.share
 //TREATWELL SPECIFIC
 body.st
 {
-  font-family: "SofiaProRegular",Arial,sans-serif;
+  font-family: "Nunito",Arial,sans-serif;
   font-size: 14px;
   line-height: 1.42857;
-  color: #0d3455;
-  background-color: #f3f4ee;
+  color: #999999;
+  background-color: #fff;
 }
 
 div.st.nav
 {
-  background-color: #F3F4EE;
-  box-shadow: 0 2px 2px rgba(0,0,0,0.125);
+  background: url('/img/nav-background.png') repeat #de181f;
+  border-bottom: 10px solid #ffcb00;
 }
 
 div.st.content
@@ -224,7 +257,7 @@ div.st.content
 
 div.st.content .header h4
 {
-  font-family: 'SofiaProBold',Arial,sans-serif;
+  font-family: 'Nunito',Arial,sans-serif;
   text-transform: uppercase;
   font-weight: normal;
   letter-spacing: 1px;
@@ -234,12 +267,12 @@ div.st.content .header h4
 
 div.st.content .header h3
 {
-  font-family: 'SofiaProExtraLight',Arial,sans-serif;
+  font-family: 'McLaren',Arial,sans-serif;
   text-transform: uppercase;
   font-weight: normal;
   letter-spacing: 1px;
-  font-size: 28px;
-  color: #0d3455;
+  font-size: 20px;
+  color: #de181f;
 }
 
 div.st.content hr{
@@ -249,15 +282,17 @@ div.st.content hr{
 
 div.st.signup
 {
-  background-color: #f17052;
+  background-color: #f6f6f6;
   margin: 0;
   padding: 25px 0;
+  margin: 0 0 25px 0;
 }
 
 div.st.signup h3
 {
-  font-family: "SofiaProRegular", Arial, sans-serif;
+  font-family: "Nunito", Arial, sans-serif;
   text-transform: uppercase;
+  color: #da2128;
 }
 
 div.st.signup p.divider
@@ -268,37 +303,60 @@ div.st.signup p.divider
 
 div.st.signup .form-control
 {
-  font-family: "SofiaProRegular",Arial,sans-serif;
-  color: #0d3455;
+  font-family: "Nunito",Arial,sans-serif;
+  font-weight: bold;
+  color: #8c4825;
   border: 1px solid #d9dad4;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: none;
+  border-bottom: 4px solid #e6dac6;
+  border-bottom-right-radius: 0px;
+  ::-webkit-input-placeholder {
+     color: #8c4825;
+  }
+
+  :-moz-placeholder { /* Firefox 18- */
+     color: #8c4825;  
+  }
+
+  ::-moz-placeholder {  /* Firefox 19+ */
+     color: #8c4825;  
+  }
+
+  :-ms-input-placeholder {  
+     color: #8c4825;  
+  }
 }
 
 div.st.signup input
 {
   height: 40px;
+  color: #8c4825;
 }
 
 a.st.btn-facebook
 {
   font-size: 14px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
   color: #fff;
-  background-color: #0d3455;
-  border-color: #0d3455;
+  background-color: #57698e;
+  border-color: #57698e;
 }
 
 input.st.btn.btn-email
 {
-  background-color: #0d3455;
-  border-color: #0d3455;
+  background: url('/img/btn-arrows.png') no-repeat center center #ffc905;
+  border-color: #ffc905;
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
   color: #fff;
+  width: 45px;
+  border-bottom: 4px solid #edba02;
+
 }
 
 
@@ -314,8 +372,8 @@ div.st.subfooter
 
 div.st.footer
 {
-  background-color: #0d3455;
-  color:#fff;
+  background-color: #f6f6f6;
+  color:#999999;
 }
 
 div.st.footer ul.menu
@@ -341,7 +399,7 @@ div.st.footer ul.menu > li a:hover
 
 div.st.progress-tiers
 {
-  font-family: 'SofiaProExtraLight',Arial,sans-serif;
+  font-family: 'Nunito',Arial,sans-serif;
 }
 
 div.st.progress-tiers .active-color
@@ -356,37 +414,13 @@ div.st.progress-tiers .no-color
 
 div.st.progress-tiers .progress-bar-color
 {
-  background-color:#0d3455;
+  background-color:#DD181F;
+  color: #FFF;
 }
 
 //FONTS
-@font-face
-{
-  font-family: 'SofiaProBold';
-  src: url('/fonts/SofiaProBold.eot?#iefix') format('embedded-opentype'),  url('/fonts/SofiaProBold.otf')  format('opentype'),
-  url('/fonts/SofiaProBold.woff') format('woff'), url('/fonts/SofiaProBold.ttf')  format('truetype'), url('/fonts/SofiaProBold.svg#SofiaProBold') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face
-{
-  font-family: 'SofiaProExtraLight';
-  src: url('/fonts/SofiaProExtraLight.eot?#iefix') format('embedded-opentype'),  url('/fonts/SofiaProExtraLight.otf')  format('opentype'),
-  url('/fonts/SofiaProExtraLight.woff') format('woff'), url('/fonts/SofiaProExtraLight.ttf')  format('truetype'), url('/fonts/SofiaProExtraLight.svg#SofiaProExtraLight') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-@font-face
-{
-  font-family: 'SofiaProRegular';
-  src: url('/fonts/SofiaProRegular.eot?#iefix') format('embedded-opentype'),  url('/fonts/SofiaProRegular.otf')  format('opentype'),
-  url('/fonts/SofiaProRegular.woff') format('woff'), url('/fonts/SofiaProRegular.ttf')  format('truetype'), url('/fonts/SofiaProRegular.svg#SofiaProRegular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+@import url(https://fonts.googleapis.com/css?family=Nunito:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=McLaren);
 
 .kkcountdown-box span
 {

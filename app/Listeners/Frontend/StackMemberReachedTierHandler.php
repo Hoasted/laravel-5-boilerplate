@@ -40,14 +40,14 @@ class StackMemberReachedTierHandler
             $reachedStackTier = $stackTiers->whereLoose('signups_required', $stackMemberReferrer->referred()->count())->first();
 
             $stackIntegration = $stack->integrations()->where('type', '=', 'emarsys')->first();
-            $emarsys = new \App\Services\Emarsys($stackIntegration->config['username'], $stackIntegration->config['password']);
-            $eUserData = array
-            (
-                '3' => $stackMemberReferrer->email,
-                '11232' => $stackMemberReferrer->referred()->count()
-            );
-            $eUserData = json_encode($eUserData);
-            $eUser = $emarsys->send('PUT', 'contact', $eUserData);
+            // $emarsys = new \App\Services\Emarsys($stackIntegration->config['username'], $stackIntegration->config['password']);
+            // $eUserData = array
+            // (
+            //     '3' => $stackMemberReferrer->email,
+            //     '11232' => $stackMemberReferrer->referred()->count()
+            // );
+            // $eUserData = json_encode($eUserData);
+            // $eUser = $emarsys->send('PUT', 'contact', $eUserData);
 
 
             if($reachedStackTier)

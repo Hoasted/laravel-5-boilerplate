@@ -9,24 +9,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <meta name="_token" content="{{ csrf_token() }}" />
-    <title>Tientje van Treatwell! Wil jij ook € 10 korting bij een beauty-, massage-, of kapsalon? Als jij je aanmeldt dan spaar ik voor nóg meer korting.</title>
-    <meta name="description" content="Ik heb net € 10 korting gekregen op een beauty &amp; wellness behandeling. Claim nu ook jouw korting!">
-    <meta name="author" content="Treatwell">
+    <title>Gratis Video Sint.tv</title>
+    <meta name="description" content="Gratis Video Sint.tv">
+    <meta name="author" content="Sint.tv">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@treatwellnl">
-    <meta name="twitter:title" content="€ 10 korting ontvangen bij je favoriete salon? Treatwell trakteert!">
-    <meta name="twitter:description" content="Ik heb net € 10 korting gekregen op een beauty &amp; wellness behandeling. Claim nu ook jouw korting!">
-    <meta name="twitter:creator" content="@treatwellnl">
-    <meta name="twitter:image" content="https://www.tientjevantreatwell.nl/img/fb-graph-header.jpg">
+    <meta name="twitter:site" content="@sinttv">
+    <meta name="twitter:title" content="Gratis Video Sint.tv">
+    <meta name="twitter:description" content="Gratis Video Sint Tv">
+    <meta name="twitter:creator" content="@sinttv">
+    <meta name="twitter:image" content="">
 
-    <meta property="og:title" content="€ 10 korting ontvangen bij je favoriete salon? Treatwell trakteert!" />
-    <meta property="og:url" content="https://www.tientjevantreatwell.nl/" />
+    <meta property="og:title" content="Gratis Video Sint.tv" />
+    <meta property="og:url" content="https://gratis.sint.tv/" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://www.tientjevantreatwell.nl/img/fb-graph-header.jpg" />
-    <meta property="og:description" content="Ik heb net € 10 korting gekregen op een beauty &amp; wellness behandeling. Claim nu ook jouw korting!" /> 
-    <meta property="og:site_name" content="Tientje van Treatwell" />
-    <meta property="fb:app_id" content="1614888285465888" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="" /> 
+    <meta property="og:site_name" content="Gratis Sint.tv" />
+    <meta property="fb:app_id" content="1500759416886149" />
 
     @yield('meta')
 
